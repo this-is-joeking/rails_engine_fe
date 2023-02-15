@@ -3,3 +3,5 @@
 Description: <%= @item.description %>
 <br>
 Price: $<%= @item.unit_price %>
+<br>
+Merchant: <%= link_to @merchant.name, merchant_path(@merchant.id) %>
